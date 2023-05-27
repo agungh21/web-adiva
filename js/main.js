@@ -20,8 +20,12 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $('.logo-adiva').addClass('hidden');
+            $('.logo-adiva2').removeClass('hidden');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.logo-adiva').removeClass('hidden');
+            $('.logo-adiva2').addClass('hidden');
         }
     });
     
@@ -67,6 +71,14 @@
         return false;
     });
 
+    // show-hide-wa
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.show-hide-wa').fadeIn('slow');
+        } else {
+            $('.show-hide-wa').fadeOut('slow');
+        }
+    });
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -75,7 +87,7 @@
         margin: 25,
         dots: false,
         loop: true,
-        center: true,
+        center: false,
         responsive: {
             0:{
                 items:1
@@ -88,6 +100,9 @@
             },
             992:{
                 items:3
+            },
+            1220:{
+                items:4
             }
         }
     });
@@ -98,6 +113,7 @@
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
+
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
@@ -107,3 +123,14 @@
     
 })(jQuery);
 
+// year
+document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+
+// menu mobile
+$('.toggle-mobile').on('click', function() {
+$('.menu-mobile').toggleClass('expanded');  
+$('.span-mobile').toggleClass('hidden');  
+$('.container-mobile , .toggle-mobile').toggleClass('close');  
+});
+
+// animation

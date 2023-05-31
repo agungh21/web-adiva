@@ -128,9 +128,16 @@ document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 
 // menu mobile
 $('.toggle-mobile').on('click', function() {
-$('.menu-mobile').toggleClass('expanded');  
-$('.span-mobile').toggleClass('hidden');  
-$('.container-mobile , .toggle-mobile').toggleClass('close');  
+    $('.menu-mobile').toggleClass('expanded');  
+    $('.span-mobile').toggleClass('hidden');  
+    $('.container-mobile , .toggle-mobile').toggleClass('close');  
 });
 
-// animation
+// search
+const clearInput = () => {
+    const input = document.getElementsByTagName("input")[0];
+    input.value = "";
+  }
+  
+  const clearBtn = document.getElementById("clear-btn");
+  clearBtn.addEventListener("click", clearInput);

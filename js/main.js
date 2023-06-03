@@ -140,4 +140,6 @@ const clearInput = () => {
   }
   
   const clearBtn = document.getElementById("clear-btn");
-  clearBtn.addEventListener("click", clearInput);
+  if(clearBtn !== null){
+      clearBtn.addEventListener("click", clearInput);
+  }

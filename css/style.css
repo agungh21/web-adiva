@@ -937,7 +937,7 @@ ul.time-line li .descr::before {
 .pricingTable {
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .pricingTable .pricingTable-header {
@@ -1262,7 +1262,7 @@ ul.time-line li .descr::before {
 }
 
 /* animation background */
-.slider-thumb::before {
+.slider-thumb {
     position: relative;
     display: flex;
     content: url(../img/undraw/undraw_voice_control_ofo1.svg);
@@ -1498,6 +1498,7 @@ ul.time-line li .descr::before {
     background-repeat: no-repeat;
 }
 
+
 .background-alamat{
     background:
     url(../img/bbburst-primary-top-right.svg), url(../img/undraw/undraw_contact_us_re_4qqt.svg), url(../img/undraw/undraw_right_direction_tge8.svg);
@@ -1505,15 +1506,46 @@ ul.time-line li .descr::before {
         right 0 top 0,
         left 0 center,
         right 0 center;
-    background-size: 350px, 350px, 220px;
-    background-repeat: no-repeat;
-}
-
+        background-size: 350px, 350px, 220px;
+        background-repeat: no-repeat;
+    }
+    
 .image-web-development{
     margin-top: -140px;
     position: absolute;
     width: 300px;
 }
+    
+.background-single-paket{
+    background:
+    url(../img/undraw/undraw_shopping_bags_rsgo-white.svg), url(../img/bbburst2.svg);
+    background-position:
+        center bottom 0,
+        right 0 bottom -1px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+.background-page-artikel{
+    background:
+    url(../img/undraw/undraw_blog_post_re_fy5x-white.svg), url(../img/bbburst2.svg);
+    background-position:
+        left bottom 0,
+        right 0 bottom -1px;
+    background-size: 230px;
+    background-repeat: no-repeat;
+}
+
+.background-single-page-artikel{
+    background:
+    url(../img/undraw/undraw_reading_re_29f8-white.svg), url(../img/bbburst2.svg);
+    background-position:
+        left bottom 0,
+        right 0 bottom -1px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
 
 /* card artikel */
 .blog-card {
